@@ -1,3 +1,9 @@
+# revision 23896
+# category Package
+# catalog-ctan /graphics/prerex
+# catalog-date 2011-09-08 22:50:25 +0200
+# catalog-license gpl
+# catalog-version 6.2
 Name:		texlive-prerex
 Version:	6.2
 Release:	1
@@ -57,6 +63,7 @@ lightweight Qt-4 and poppler-based prerex-enabled PDF viewer.
 %doc %{_texmfdistdir}/doc/latex/prerex/doc/prerex.tex
 %doc %{_texmfdistdir}/doc/latex/prerex/prerex-6.2.tar.gz
 %doc %{_texmfdistdir}/doc/latex/prerex/vprerex-6.2.tar.gz
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -67,3 +74,5 @@ lightweight Qt-4 and poppler-based prerex-enabled PDF viewer.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
