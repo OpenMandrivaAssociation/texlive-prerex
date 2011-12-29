@@ -17,8 +17,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 This package consists of prerex.sty, a LaTeX package for
@@ -30,20 +28,12 @@ happily with latex or pdflatex; prerex itself is written in C.
 The package includes source code for a previewer application, a
 lightweight Qt-4 and poppler-based prerex-enabled PDF viewer.
 
-%pre
-    %_texmf_mktexlsr_pre
-
 %post
-    %_texmf_mktexlsr_post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
-    fi
+    %{_sbindir}/texlive.post
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
@@ -64,7 +54,6 @@ lightweight Qt-4 and poppler-based prerex-enabled PDF viewer.
 %doc %{_texmfdistdir}/doc/latex/prerex/doc/prerex.tex
 %doc %{_texmfdistdir}/doc/latex/prerex/prerex-6.2.tar.gz
 %doc %{_texmfdistdir}/doc/latex/prerex/vprerex-6.2.tar.gz
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -75,5 +64,3 @@ lightweight Qt-4 and poppler-based prerex-enabled PDF viewer.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
