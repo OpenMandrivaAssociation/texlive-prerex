@@ -1,12 +1,12 @@
-# revision 25004
+# revision 25800
 # category Package
 # catalog-ctan /graphics/prerex
-# catalog-date 2012-01-02 20:49:01 +0100
+# catalog-date 2012-03-31 19:27:16 +0200
 # catalog-license gpl
-# catalog-version 6.2
+# catalog-version 6.3.2
 Name:		texlive-prerex
-Version:	6.2
-Release:	3
+Version:	6.3.2
+Release:	1
 Summary:	Interactive editor and macro support for prerequisite charts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/prerex
@@ -46,14 +46,13 @@ lightweight Qt-4 and poppler-based prerex-enabled PDF viewer.
 %doc %{_texmfdistdir}/doc/latex/prerex/chart.tex
 %doc %{_texmfdistdir}/doc/latex/prerex/doc/intro.pdf
 %doc %{_texmfdistdir}/doc/latex/prerex/doc/intro.tex
-%doc %{_texmfdistdir}/doc/latex/prerex/doc/introFonts.png
 %doc %{_texmfdistdir}/doc/latex/prerex/doc/introchart1.tex
 %doc %{_texmfdistdir}/doc/latex/prerex/doc/introchart2.tex
 %doc %{_texmfdistdir}/doc/latex/prerex/doc/prerex.pdf
 %doc %{_texmfdistdir}/doc/latex/prerex/doc/prerex.sty.7
 %doc %{_texmfdistdir}/doc/latex/prerex/doc/prerex.tex
-%doc %{_texmfdistdir}/doc/latex/prerex/prerex-6.2.tar.gz
-%doc %{_texmfdistdir}/doc/latex/prerex/vprerex-6.3.1.tar.gz
+%doc %{_texmfdistdir}/doc/latex/prerex/prerex-6.3.2.tar.gz
+%doc %{_texmfdistdir}/doc/latex/prerex/vprerex-6.3.2.tar.gz
 
 #-----------------------------------------------------------------------
 %prep
