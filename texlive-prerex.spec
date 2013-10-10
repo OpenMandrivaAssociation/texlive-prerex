@@ -1,11 +1,11 @@
-# revision 26698
+# revision 27495
 # category Package
 # catalog-ctan /graphics/prerex
-# catalog-date 2012-05-28 13:29:39 +0200
+# catalog-date 2012-08-22 19:18:22 +0200
 # catalog-license gpl
-# catalog-version 6.5.1
+# catalog-version 6.5.2
 Name:		texlive-prerex
-Version:	6.5.1
+Version:	6.5.2
 Release:	1
 Summary:	Interactive editor and macro support for prerequisite charts
 Group:		Publishing
@@ -53,7 +53,7 @@ lightweight Qt-4 and poppler-based prerex-enabled PDF viewer.
 %doc %{_texmfdistdir}/doc/latex/prerex/doc/prerex.sty.7
 %doc %{_texmfdistdir}/doc/latex/prerex/doc/prerex.tex
 %doc %{_texmfdistdir}/doc/latex/prerex/prerex-6.5.1.tar.gz
-%doc %{_texmfdistdir}/doc/latex/prerex/vprerex-6.4.1.tar.gz
+%doc %{_texmfdistdir}/doc/latex/prerex/vprerex-6.4.2.tar.gz
 
 #-----------------------------------------------------------------------
 %prep
@@ -64,33 +64,3 @@ lightweight Qt-4 and poppler-based prerex-enabled PDF viewer.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Aug 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 6.5.1-1
-+ Revision: 812784
-- Update to latest release.
-
-* Mon Jun 11 2012 Paulo Andrade <pcpa@mandriva.com.br> 6.4.2-1
-+ Revision: 805038
-- Update to latest release.
-
-* Fri Apr 13 2012 Paulo Andrade <pcpa@mandriva.com.br> 6.3.2-1
-+ Revision: 790735
-- Update to latest release.
-
-* Mon Jan 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 6.2-3
-+ Revision: 759021
-- Update to latest upstream release
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 6.2-2
-+ Revision: 755061
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 6.2-1
-+ Revision: 719295
-- texlive-prerex
-- texlive-prerex
-- texlive-prerex
-- texlive-prerex
-
