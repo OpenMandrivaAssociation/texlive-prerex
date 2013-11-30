@@ -1,11 +1,11 @@
-# revision 27495
+# revision 31899
 # category Package
 # catalog-ctan /graphics/prerex
-# catalog-date 2012-08-22 19:18:22 +0200
+# catalog-date 2013-10-14 15:20:32 +0200
 # catalog-license gpl
-# catalog-version 6.5.2
+# catalog-version 6.5.3
 Name:		texlive-prerex
-Version:	6.5.2
+Version:	6.5.3
 Release:	1
 Summary:	Interactive editor and macro support for prerequisite charts
 Group:		Publishing
@@ -40,10 +40,12 @@ lightweight Qt-4 and poppler-based prerex-enabled PDF viewer.
 %files
 %{_texmfdistdir}/tex/latex/prerex/prerex.sty
 %doc %{_texmfdistdir}/doc/latex/prerex/README
+%doc %{_texmfdistdir}/doc/latex/prerex/boldbox.png
 %doc %{_texmfdistdir}/doc/latex/prerex/chart.html
 %doc %{_texmfdistdir}/doc/latex/prerex/chart.pdf
 %doc %{_texmfdistdir}/doc/latex/prerex/chart.png
 %doc %{_texmfdistdir}/doc/latex/prerex/chart.tex
+%doc %{_texmfdistdir}/doc/latex/prerex/dashed.png
 %doc %{_texmfdistdir}/doc/latex/prerex/doc/intro.pdf
 %doc %{_texmfdistdir}/doc/latex/prerex/doc/intro.tex
 %doc %{_texmfdistdir}/doc/latex/prerex/doc/introFonts.png
@@ -52,7 +54,10 @@ lightweight Qt-4 and poppler-based prerex-enabled PDF viewer.
 %doc %{_texmfdistdir}/doc/latex/prerex/doc/prerex.pdf
 %doc %{_texmfdistdir}/doc/latex/prerex/doc/prerex.sty.7
 %doc %{_texmfdistdir}/doc/latex/prerex/doc/prerex.tex
-%doc %{_texmfdistdir}/doc/latex/prerex/prerex-6.5.1.tar.gz
+%doc %{_texmfdistdir}/doc/latex/prerex/dotted.png
+%doc %{_texmfdistdir}/doc/latex/prerex/lightbox.png
+%doc %{_texmfdistdir}/doc/latex/prerex/prerex-6.5.2.tar.gz
+%doc %{_texmfdistdir}/doc/latex/prerex/solid.png
 %doc %{_texmfdistdir}/doc/latex/prerex/vprerex-6.4.2.tar.gz
 
 #-----------------------------------------------------------------------
