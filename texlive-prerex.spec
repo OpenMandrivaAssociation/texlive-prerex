@@ -6,7 +6,7 @@
 # catalog-version 6.5.3
 Name:		texlive-prerex
 Version:	6.5.3
-Release:	3
+Release:	4
 Summary:	Interactive editor and macro support for prerequisite charts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/prerex
