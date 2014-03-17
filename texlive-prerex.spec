@@ -1,12 +1,12 @@
-# revision 31899
+# revision 33078
 # category Package
 # catalog-ctan /graphics/prerex
-# catalog-date 2013-10-14 15:20:32 +0200
+# catalog-date 2014-03-03 01:23:02 +0100
 # catalog-license gpl
-# catalog-version 6.5.3
+# catalog-version undef
 Name:		texlive-prerex
-Version:	6.5.3
-Release:	5
+Version:	20140303
+Release:	1
 Summary:	Interactive editor and macro support for prerequisite charts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/prerex
@@ -23,9 +23,9 @@ This package consists of prerex.sty, a LaTeX package for
 producing charts of course nodes linked by arrows representing
 pre- and co-requisites, and prerex, an interactive program for
 creating and editing chart descriptions. The implementation of
-prerex.sty is built on PGF, so that it may be used equally
-happily with latex or pdflatex; prerex itself is written in C.
-The package includes source code for a previewer application, a
+prerex.sty uses PGF, so that it may be used equally happily
+with latex or pdflatex; prerex itself is written in C. The
+package includes source code for a previewer application, a
 lightweight Qt-4 and poppler-based prerex-enabled PDF viewer.
 
 %post
@@ -46,17 +46,17 @@ lightweight Qt-4 and poppler-based prerex-enabled PDF viewer.
 %doc %{_texmfdistdir}/doc/latex/prerex/chart.png
 %doc %{_texmfdistdir}/doc/latex/prerex/chart.tex
 %doc %{_texmfdistdir}/doc/latex/prerex/dashed.png
-%doc %{_texmfdistdir}/doc/latex/prerex/doc/intro.pdf
-%doc %{_texmfdistdir}/doc/latex/prerex/doc/intro.tex
-%doc %{_texmfdistdir}/doc/latex/prerex/doc/introFonts.png
-%doc %{_texmfdistdir}/doc/latex/prerex/doc/introchart1.tex
-%doc %{_texmfdistdir}/doc/latex/prerex/doc/introchart2.tex
-%doc %{_texmfdistdir}/doc/latex/prerex/doc/prerex.pdf
-%doc %{_texmfdistdir}/doc/latex/prerex/doc/prerex.sty.7
-%doc %{_texmfdistdir}/doc/latex/prerex/doc/prerex.tex
 %doc %{_texmfdistdir}/doc/latex/prerex/dotted.png
+%doc %{_texmfdistdir}/doc/latex/prerex/intro.pdf
+%doc %{_texmfdistdir}/doc/latex/prerex/intro.tex
+%doc %{_texmfdistdir}/doc/latex/prerex/introFonts.png
+%doc %{_texmfdistdir}/doc/latex/prerex/introchart1.tex
+%doc %{_texmfdistdir}/doc/latex/prerex/introchart2.tex
 %doc %{_texmfdistdir}/doc/latex/prerex/lightbox.png
 %doc %{_texmfdistdir}/doc/latex/prerex/prerex-6.5.2.tar.gz
+%doc %{_texmfdistdir}/doc/latex/prerex/prerex.pdf
+%doc %{_texmfdistdir}/doc/latex/prerex/prerex.sty.7
+%doc %{_texmfdistdir}/doc/latex/prerex/prerex.tex
 %doc %{_texmfdistdir}/doc/latex/prerex/solid.png
 %doc %{_texmfdistdir}/doc/latex/prerex/vprerex-6.4.2.tar.gz
 
