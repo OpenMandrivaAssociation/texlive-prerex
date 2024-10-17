@@ -3,7 +3,7 @@ Version:	54512
 Release:	2
 Summary:	Interactive editor and macro support for prerequisite charts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/graphics/prerex
+URL:		https://www.ctan.org/tex-archive/graphics/prerex
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/prerex.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/prerex.doc.r%{version}.tar.xz
